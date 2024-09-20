@@ -19,6 +19,7 @@ public class reset : MonoBehaviour
         {
             Debug.Log("Onion should transport now!!!!");
             Onion.transform.position = new Vector3(10, 15, 175);
+            Onion.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
 
     }
